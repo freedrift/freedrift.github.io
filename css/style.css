@@ -96,7 +96,7 @@ a
 
     float: right;
     justify-content: space-around;
-    padding: 0 46px
+    padding: 0 26px
 }
 .nav li
 {
@@ -105,7 +105,7 @@ a
 }
 .nav li:last-of-type
 {
-    margin-right: 0;
+    /*margin-right: 0;*/
 }
 .nav li a
 {
@@ -117,6 +117,38 @@ a
 {
     opacity: 1;
     transition: opacity ease-in-out .5s;
+}
+
+.nav.active {
+      display: flex;
+}
+
+.toggle-button {
+      display: none;
+      float: right;
+      text-align: center;
+      padding: 12px 26px 12px 0;
+      cursor: pointer;
+      font-size: 1.4em;
+}
+
+
+@media screen and (max-width: 600px) {
+   .toggle-button {
+      display: block;
+   }
+
+   .nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      grid-row: 2;
+   }
+
+   .nav li {
+      text-align: center;
+      padding: 10px 20px;
+   }
 }
 
 .post-header

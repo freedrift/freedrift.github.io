@@ -54,6 +54,9 @@
 	   <div class="header">
     <a class="logo" href="/">AYZZ NOTE</a>
     <!-- <div class="logo"><a href="/" title="Len"><img src="/img/logo.svg" alt="Len" aria-label="logo" height="20"></a></div> -->
+    <div class="toggle-button">
+      <a onclick="toggleMenu()">☰</a>
+    </div>
     <ul class="nav">
         
         <li><a href="/">首页</a></li>
@@ -67,6 +70,7 @@
 
 <script>
     const header = document.querySelector('.header')
+    const nav = document.querySelector('.nav')
     let n = 0;
     window.addEventListener('scroll', function () {
 	// header.style.top = document.documentElement.scrollTop > n ? '-80px' : 0
@@ -76,6 +80,15 @@
 		header.style.top = 0
 	}
 	setTimeout(function(){ n = document.documentElement.scrollTop; },1)
+    })
+
+    function toggleMenu() {
+      const nav = document.querySelector('.nav');
+      nav.classList.toggle('active');
+    }
+    
+    nav.addEventListener('click', function(){
+      nav.classList.remove('active');
     })
 </script>
 
