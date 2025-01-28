@@ -18,7 +18,7 @@ p
 
 body
 {
-    font-family: "Montserrat", "SF UI Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Helvetica, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-family: "思源黑体", "Montserrat", "SF UI Text", "PingFang SC", "LXGW WenKai Screen", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Helvetica, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.6px;
@@ -245,6 +245,7 @@ a
 {
     word-break: break-all;
     margin-bottom: 12px;
+    text-align: justify;
 }
 .read-more
 {
@@ -365,7 +366,7 @@ a
 {
     flex: 0 0 100%;
     margin-bottom: 12px;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1.5;
     color: var(--font-color-1);
