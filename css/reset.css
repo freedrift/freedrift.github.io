@@ -54,7 +54,7 @@ figure:hover::-webkit-scrollbar-track {
 
 .line
 {
-    font-family: 'JetBrains Mono', 'Consolas' !important;
+    font-family: 'Fira Code', 'JetBrains Mono', 'Consolas' !important;
     font-size: 14px;
 
 }
